@@ -24,9 +24,20 @@ async def handle_update(token: str, request_body: dict):
     if response.status_code != 200:
         return {"error": "Failed to forward the request"}
 
-    return response.json()
+    return {"success": True}
+
+
+def set_webhooks():
+    for bot in settings["bots"]:
+        url = settings['webhook_base'].format(token=bot["token"])
+        response = requests.post(
+            f"https://api.telegram.org/bot{bot['token']}/setWebhook",
+            json={"url": url}
+        )
+        print(f"Webhook for @{bot['username']}: {'OK' if response.status_code == 200 else 'FAIL'}")
 
 
 if __name__ == '__main__':
     import uvicorn
+    set_webhooks()
     uvicorn.run(app, host=settings['api_host'], port=settings['api_port'])
