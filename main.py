@@ -13,7 +13,7 @@ async def handle_update(token: str, request_body: dict):
     bot_info = next((bot for bot in settings["bots"] if bot["token"] == token), None)
     if not bot_info:
         return {"error": "Bot not found"}
-    if bot_info.get("maintenance_status"):
+    if bot_info.get("maintenance_status", -1) >= 0:
         return maintenance.handle_update(bot_info, request_body)
     if not bot_info.get("proxy_pass"):
         return {"error": "Bot not configured"}

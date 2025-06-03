@@ -15,6 +15,9 @@ def status_message(status: int) -> str:
 
 
 def handle_update(bot_info: dict, request_body: dict) -> dict:
+    if "message" not in request_body:
+        return {"success": True} # ignore non-message updates
+
     return {
         "method": "sendMessage",
         "chat_id": request_body["message"]["chat"]["id"],
