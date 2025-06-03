@@ -1,0 +1,45 @@
+{
+    "contacts": [
+        {
+            "title": "Portfolio",
+            "url": "https://pesaventofilippo.com",
+            "icon": "\uD83D\uDCCE"
+        },
+        {
+            "title": "GitHub",
+            "url": "https://github.com/pesaventofilippo",
+            "icon": "\uD83D\uDCCE"
+        },
+        {
+            "title": "Telegram",
+            "url": "https://t.me/pesaventofilippo",
+            "icon": "\uD83D\uDCCE"
+        }
+    ],
+    "messages": {
+        "0": {
+            "icon": "\uD83D\uDED1",
+            "title": "Bot Discontinued",
+            "en": "Hi! This bot has been stopped and will probably not resume service any time soon. Sorry for the inconvenience!\nYou can find some of my contacts below if you need to get in touch.",
+            "it": "Ciao! Questo bot è stato spento e non riprenderà a funzionare almeno nel prossimo futuro. Mi scuso per il disagio!\nQui sotto puoi trovare alcuni contatti se avessi bisogno di scrivermi."
+        },
+        "1": {
+            "icon": "\uD83D\uDEB8",
+            "title": "Bot Suspended",
+            "en": "Hi! This bot has been suspended indefinitely but may resume service in the future. In the meantime, sorry for the inconvenience!\nYou can find some of my contacts below if you need to get in touch.",
+            "it": "Ciao! Questo bot è stato sospeso per un tempo indeterminato, ma potrebbe tornare a funzionare in futuro. Nel frattempo, mi scuso per il disagio!\nQui sotto puoi trovare alcuni contatti se avessi bisogno di scrivermi."
+        },
+        "2": {
+            "icon": "\uD83D\uDEA7",
+            "title": "Bot Under Maintenance",
+            "en": "Hi! This bot is currently under maintenance and should resume working soon. Don't delete the chat, as you may get a message when it starts again. In the meantime, sorry for the inconvenience!\nYou can find some of my contacts below if you need to get in touch.",
+            "it": "Ciao! Questo bot è attualmente in manutenzione, ma dovrebbe tornare a funzionare a breve. Non eliminare la chat, perchè potresti ricevere un messaggio quando riprenderà a funzionare. Nel frattempo, mi scuso per il disagio!\nQui sotto puoi trovare alcuni contatti se avessi bisogno di scrivermi."
+        },
+        "3": {
+            "icon": "\uD83D\uDC68\u200D\uD83D\uDCBB",
+            "title": "Bot in Development \uD83D\uDD1C",
+            "en": "Hi! This bot is currently under development and it's a work-in-progress. It doesn't work right now, but you can expect it to work some time in the near future!\nYou can find some of my contacts below if you need to get in touch.",
+            "it": "Ciao! Questo bot è attualmente in sviluppo. Per adesso non funziona, ma dovrebbe essere pronto tra un po' di tempo!\nQui sotto puoi trovare alcuni contatti se avessi bisogno di scrivermi."
+        }
+    }
+}
